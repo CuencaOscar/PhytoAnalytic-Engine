@@ -1,0 +1,7 @@
+Información del conjunto de entrenamiento:
+Número de datos: 70295
+Ubicación: /content/drive/My Drive/TFM VIU/Data/New Plant Diseases Dataset(Augmented)/train
+
+Información del conjunto de validación:
+Número de datos: 17572
+Ubicación: /content/drive/My Drive/TFM VIU/Data/New Plant Diseases Dataset(Augmented)/valid
