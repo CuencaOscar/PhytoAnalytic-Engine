@@ -9,15 +9,11 @@ class Classifier():
     # Obtener el train
     train = torch.load('./resources/train_dataset.pt')
 
-    # Obtener el dispositivo por defecto (GPU si está, de lo contrario, CPU)
     device = get_default_device()
 
-    # Crear una instancia del modelo ResNet9 y moverlo (CPU o GPU)
     model = to_device(ResNet9(3, len(train.classes)), device)
     model.load_state_dict(torch.load('plant-disease-model.pth'))
     model.eval()
-    # Imprimir la representación del modelo en la salida
-    print('El modelo que tengo es: ', model)
 
     def predict_image(img, model, topk=3):
         xb = to_device(img.unsqueeze(0), Classifier.device)
