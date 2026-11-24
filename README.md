@@ -7,6 +7,9 @@ neural network built with **PyTorch**. It is the backend of
 
 ![CI](https://github.com/CuencaOscar/PhytoAnalytic-Engine/actions/workflows/ci.yml/badge.svg)
 
+<p align="center"><img src="https://raw.githubusercontent.com/CuencaOscar/LeafHealth-Tracker/master/docs/screenshots.png" alt="LeafHealth-Tracker app powered by this API" width="900"></p>
+<p align="center"><sub>The <a href="https://github.com/CuencaOscar/LeafHealth-Tracker">LeafHealth Tracker</a> mobile app, powered by this API.</sub></p>
+
 ## How it works
 
 ```
