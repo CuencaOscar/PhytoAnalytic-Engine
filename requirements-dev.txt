@@ -2,5 +2,5 @@ flask>=3.0,<4
 pillow>=10.0
 python-dotenv>=1.0
 requests>=2.31
-pytest>=8.0,<9
+pytest>=8.0,<10
 ruff>=0.5
