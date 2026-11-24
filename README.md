@@ -12,10 +12,12 @@ neural network built with **PyTorch**. It is the backend of
 
 ## How it works
 
-```
-Mobile app (React Native) ──► Firebase Storage ──► PhytoAnalytic Engine (Flask) ──► ResNet9 (PyTorch)
-          ▲                                                    │
-          └──────────────── top-3 diseases + probability ◄─────┘
+```mermaid
+flowchart LR
+    app["📱 LeafHealth Tracker<br/>React Native app"] -- "leaf photo" --> storage[("Firebase Storage")]
+    storage --> api["⚙️ PhytoAnalytic Engine<br/>Flask API"]
+    api --> model["🌿 ResNet9<br/>PyTorch"]
+    api -- "top-3 diseases + probability" --> app
 ```
 
 1. The app uploads the leaf photo (or sends it directly to the API).
